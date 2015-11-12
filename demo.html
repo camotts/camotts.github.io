@@ -27,7 +27,9 @@
 $(document).ready(function(){
 	request = $.ajax({
 				url: "http://tuner.pandora.com/services/json/?method=auth.partnerLogin&username=android&password=AC7IBG09A3DTSYM4R41UJWL07VLN8JI7&deviceModel=android-generic&version=5",
-				type: "get"
+				type: "get",
+				crossDomain: true,
+    			dataType: 'jsonp',
 			});
 			request.done(function (response, textStatus, jqXHR){
 				alert(response);
