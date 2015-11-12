@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="camOtts">
+<head>
+    <title>Cameron Otts</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <script src="Scripts/Angular/angular-1.4.5/angular.js"></script>
+    <script src="Scripts/Angular/angular-1.4.5/angular-ui-router.js"></script>
+    <script src="Scripts/Custom/app.js"></script>
+
+
+    <base href="/">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-caution">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Cameron Otts</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#/Pao"><i class="fa fa-comment"></i> Pao</a></li>
+                <li><a href="#/Mcdowell"><i class="fa fa-comment"></i> McDowell</a></li>
+                <li><a href="#/Finance"><i class="fa fa-comment"></i> Finance</a></li>
+            </ul>
+    </nav>
+</header>
+<div id="main">
+    <div ui-view></div>
+</div>
+</body>
+</html>
